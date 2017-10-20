@@ -8,7 +8,7 @@ class MathAction extends CAction
         $result = $this->calc($a, $b);
         $model = new MathForm;
 
-        Yii::app()->controller->performAjaxValidation($model);
+        // Yii::app()->controller->performAjaxValidation($model);
 
         if (isset($_POST['MathForm'])) {
 

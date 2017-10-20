@@ -12,7 +12,15 @@
 <body>
 
     <h1>Math Layout</h1>
-    <?php echo $content; ?>
+    <fieldset>
+
+        <legend>Math -
+            <?php echo $this->action->id;?>
+        </legend>
+
+        <?php echo $content; ?> 
+        
+    </fieldset>
 
     <footer>-- comi test web --</footer>
 </body>

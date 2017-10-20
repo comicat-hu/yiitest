@@ -70,7 +70,7 @@ class SiteController extends Controller
 
             if ($model->validate()) {
                 var_dump($model->username);
-                Yii::app()->getUser()->setReturnUrl('?r=site/login');
+                Yii::app()->getUser()->setReturnUrl('login');
                 $this->redirect(Yii::app()->user->returnUrl);
             }
         }

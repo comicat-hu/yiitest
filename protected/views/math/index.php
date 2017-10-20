@@ -1,9 +1,5 @@
-<fieldset>
-    <legend>
-        <?php echo $this->id . '/' . $this->action->id; ?>
-    </legend>
-    <a href="./?r=math/add">ADD(+)</a>
-    <a href="./?r=math/sub">SUB(-)</a>
-    <a href="./?r=math/mul">MUL(*)</a>
-    <a href="./?r=math/div">DIV(/)</a>
-</fieldset>
+<a href="./add"><button>ADD(+)</button></a>
+<a href="./sub"><button>SUB(-)</button></a>
+<a href="./mul"><button>MUL(*)</button></a>
+<a href="./div"><button>DIV(/)</button></a>
+<?php echo 'hostInfo: ' . Yii::app()->request->hostInfo;?>

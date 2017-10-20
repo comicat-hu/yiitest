@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * PHP Version 5.6.31
+ * 
+ * Class for MathController
+ * 
+ * @author comi.hu <comi.hu@104.com.tw>
+ */
 class MathController extends Controller
 {
     public function actions()
@@ -26,7 +33,7 @@ class MathController extends Controller
     public function performAjaxValidation($model)
     {
 
-        var_dump($_POST);
+        // var_dump($_POST);
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'math-form') {
             echo CActiveForm::validate($model); 
             Yii::app()->end();
