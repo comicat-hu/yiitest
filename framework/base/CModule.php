@@ -453,6 +453,7 @@ abstract class CModule extends CComponent
 			$this->_componentConfig[$id]=CMap::mergeArray($this->_componentConfig[$id],$component);
 		else
 			$this->_componentConfig[$id]=$component;
+		
 	}
 
 	/**

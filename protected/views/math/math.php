@@ -10,6 +10,7 @@ $form = $this->beginWidget('CActiveForm', array(
     //     'validateOnChange'=>true,
     //    ),
     'focus' => array($model, 'a'),
+    'action' => Yii::app()->createUrl('//math/' . $this->action->id),
 )); ?>
 
 

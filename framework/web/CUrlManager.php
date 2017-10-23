@@ -226,6 +226,8 @@ class CUrlManager extends CApplicationComponent
 			$this->_rules[]=$this->createUrlRule($route,$pattern);
 		if(isset($cache))
 			$cache->set(self::CACHE_KEY,array($this->_rules,$hash));
+
+		
 	}
 
 	/**
@@ -668,7 +670,7 @@ class CUrlRule extends CBaseUrlRule
 			$route=$route[0];
 		}
 		$this->route=trim($route,'/');
-
+		
 		$tr2['/']=$tr['/']='\\/';
 
 		if(strpos($route,'<')!==false && preg_match_all('/<(\w+)>/',$route,$matches2))
