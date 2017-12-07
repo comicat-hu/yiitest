@@ -20,7 +20,7 @@ $form = $this->beginWidget('CActiveForm', array(
     <?php echo $sign;?>
     <?php echo $form->textField($model, 'b', ['placeholder' => 'B']); ?>
     <?php echo CHtml::submitButton('Submit'); ?>
-    <a href="./"><?php echo CHtml::button('Back'); ?></a>
+    <a href="."><?php echo CHtml::button('Back'); ?></a>
 </div>
 
 <?php echo $form->error($model, 'a'); ?>

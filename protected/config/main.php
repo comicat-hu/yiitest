@@ -25,5 +25,27 @@ return [
         'errorHandler' => [
             //'errorAction' => 'site/index',
         ],
+        'cache' => array(
+            'class' => 'CApcCache'
+        ),
+        'memCache' => [
+            'class' => 'CMemCache',
+            'useMemcached' => false,
+            'keyPrefix' => '',
+            // 'hashKey' => false,
+            // 'serializer' => false,
+            'servers' => [
+                [
+                    'host' => '10.102.5.220',
+                    'port' => 11211,
+                    'weight' => 50,
+                ],
+                [
+                    'host' => '10.102.5.222',
+                    'port' => 11211,
+                    'weight' => 50,
+                ],
+            ],
+        ],
     ],
 ];

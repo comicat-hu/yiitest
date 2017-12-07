@@ -20,6 +20,9 @@ class MathController extends Controller
         ];
     }
 
+    /**
+     * @web
+     */
     public function actionIndex()
     {
         $this->layout = 'math_layout';
